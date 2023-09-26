@@ -1,0 +1,15 @@
+{
+  "name": "sunology",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build --parallel",
+    "dev": "turbo run dev --parallel"
+  },
+  "dependencies": {
+    "turbo": "^1.10.14"
+  }
+}
