@@ -7,9 +7,14 @@
   ],
   "scripts": {
     "build": "turbo run build --parallel",
-    "dev": "turbo run dev --parallel"
+    "build-storybook": "turbo run build-storybook --parallel",
+    "dev": "turbo run dev --parallel",
+    "deploy-storybook": "storybook-to-ghpages --packages packages -o docs"
   },
   "dependencies": {
     "turbo": "^1.10.14"
+  },
+  "devDependencies": {
+    "@storybook/storybook-deployer": "^2.8.16"
   }
 }

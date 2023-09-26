@@ -1,0 +1,33 @@
+name: Build Pull Request
+
+on:
+  pull_request: {}
+
+jobs:
+    build:
+      permissions: write-all
+      name: Build
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+          with:
+            fetch-depth: 0
+  
+        - uses: oven-sh/setup-bun@v1
+  
+        - name: Restore/create node_modules cache
+          uses: actions/cache@v2
+          with:
+            path: '**/node_modules'
+            key: ${{ runner.os }}-modules-${{ hashFiles('**/bun.lockb') }}
+  
+        - name: Install dependencies
+          run: bun install --frozen-lockfile
+          env:
+            HUSKY: 0
+  
+        - name: Build sources
+          run: bun run build
+  
+        - name: Build showcases
+          run: bun run build-storybook
