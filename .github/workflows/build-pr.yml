@@ -13,7 +13,10 @@ jobs:
           with:
             fetch-depth: 0
   
-        - uses: oven-sh/setup-bun@v1
+        - uses: actions/setup-node@v1
+          with:
+            node-version: '14.x'
+            registry-url: 'https://registry.npmjs.org'
   
         - name: Restore/create node_modules cache
           uses: actions/cache@v2
@@ -22,12 +25,12 @@ jobs:
             key: ${{ runner.os }}-modules-${{ hashFiles('**/bun.lockb') }}
   
         - name: Install dependencies
-          run: bun install --frozen-lockfile
+          run: yarn install --frozen-lockfile
           env:
             HUSKY: 0
   
         - name: Build sources
-          run: bun run build
+          run: yarn build
   
         - name: Build showcases
-          run: bun run build-storybook
+          run: yarn build-storybook
