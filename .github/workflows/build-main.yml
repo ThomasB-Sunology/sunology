@@ -33,6 +33,9 @@ jobs:
         env:
           HUSKY: 0
 
+      - name: Revision
+        run: bun --revision
+
       - name: Build
         run: bun run build
 
