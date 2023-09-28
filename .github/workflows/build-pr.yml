@@ -25,6 +25,9 @@ jobs:
           run: bun install
           env:
             HUSKY: 0
+
+        - name: Revision
+          run: bun --revision
   
         - name: Build sources
           run: bun run build
