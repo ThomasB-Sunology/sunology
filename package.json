@@ -10,7 +10,7 @@
     "build": "turbo run build --parallel",
     "build-storybook": "turbo run build-storybook --parallel",
     "dev": "turbo run dev --parallel",
-    "deploy-storybook": "storybook-to-ghpages --packages packages -o docs",
+    "deploy-storybook": "storybook-to-ghpages --packages packages -o docs --monorepo-index-generator tools/storybook/index-generator.js",
     "postinstall": "is-ci || husky install"
   },
   "dependencies": {},
