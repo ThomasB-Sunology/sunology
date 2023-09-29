@@ -1,5 +1,5 @@
 const generateLinks = (package) => `
-  <a href="${package.name}" target="_blank" rel="noopener noreferrer" class="vtmn-btn vtmn-btn_variant--tertiary vtmn-mb-4" style="width: 300px">
+  <a href="${package.name}" target="_blank" rel="noopener noreferrer" class="btn" style="width: 300px">
     ${package.name}
   </a>
 `;
@@ -12,6 +12,18 @@ const generateHTML = (packages) => `
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Sunology Design System - Vitamin web libraries showcases</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link 
+      href="https://unpkg.com/modern-normalize@2.0.0/modern-normalize.css"
+      rel="stylesheet"
+    />
     <style>
         .container {
             padding: 1.5rem;
@@ -19,9 +31,9 @@ const generateHTML = (packages) => `
             align-items: center;
             flex-direction: column;
             display: flex;
+            height: 100vh;
         }
         .btn {
-            width: 300px;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -52,14 +64,6 @@ const generateHTML = (packages) => `
             background-color: #C3D100;
         }
     </style>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <div class="container">
