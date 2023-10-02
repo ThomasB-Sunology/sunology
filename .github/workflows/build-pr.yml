@@ -34,12 +34,9 @@ jobs:
           run: bun install
           env:
             HUSKY: 0
-
-        - name: Revision
-          run: bun --revision
   
         - name: Build sources
-          run: bun run build
+          run: yarn build
   
         - name: Build showcases
-          run: bun run build-storybook
+          run: yarn build-storybook
