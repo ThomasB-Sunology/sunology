@@ -37,6 +37,7 @@ jobs:
   
         - name: Build sources
           run: bun run build
+          working-directory: apps/sunology
   
         - name: Build showcases
           run: bun run build-storybook
