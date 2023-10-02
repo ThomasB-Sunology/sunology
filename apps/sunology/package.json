@@ -2,7 +2,7 @@
   "name": "@sunology/headless",
   "private": true,
   "sideEffects": false,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "build": "shopify hydrogen build",
     "dev": "shopify hydrogen dev --codegen-unstable",
