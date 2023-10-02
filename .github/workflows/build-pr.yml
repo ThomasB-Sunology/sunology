@@ -17,22 +17,26 @@ jobs:
           uses: actions/setup-node@v3
           with:
             node-version-file: '.nvmrc'
-            cache: 'yarn'
-            cache-dependency-path: '**/yarn.lock'
+            cache: 'bun'
+            cache-dependency-path: '**/bun.lockb'
+
+        - uses: oven-sh/setup-bun@v1
+          with:
+            bun-version: canary
   
         - name: Restore/create node_modules cache
           uses: actions/cache@v3
           with:
             path: '**/node_modules'
-            key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+            key: ${{ runner.os }}-modules-${{ hashFiles('**/bun.lockb') }}
   
         - name: Install dependencies
-          run: yarn install
+          run: bun install
           env:
             HUSKY: 0
   
         - name: Build sources
-          run: yarn build
+          run: bun run build
   
         - name: Build showcases
-          run: yarn build-storybook
+          run: bun run build-storybook

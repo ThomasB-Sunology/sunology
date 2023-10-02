@@ -14,7 +14,7 @@
     "postinstall": "is-ci || husky install",
     "clean": "rm -rf **/**/node_modules"
   },
-  "dependencies": {},
+  "dependencies": { "bun-types": "^1.0.3" },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
