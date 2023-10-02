@@ -1,6 +1,6 @@
 {
   "name": "sunology",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -10,8 +10,9 @@
     "build": "turbo run build --parallel",
     "build-storybook": "turbo run build-storybook --parallel",
     "dev": "turbo run dev --parallel",
-    "deploy-storybook": "storybook-to-ghpages --packages packages -o docs",
-    "postinstall": "is-ci || husky install"
+    "deploy-storybook": "storybook-to-ghpages --packages packages -o docs --monorepo-index-generator tools/storybook/index-generator.js",
+    "postinstall": "is-ci || husky install",
+    "clean": "rm -rf **/**/node_modules"
   },
   "dependencies": {},
   "devDependencies": {
@@ -23,9 +24,7 @@
     "turbo": "^1.10.14"
   },
   "engines": {
-    "node": "^18 || ^20",
-    "npm": "please-use-yarn",
-    "yarn": ">= 1.19.1"
+    "node": "^16 || ^18 || ^20"
   },
   "storybook-deployer": {
     "gitUsername": "Sunology BOT",

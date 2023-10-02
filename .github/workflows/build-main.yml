@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - feat/bun
 jobs:
   build:
     name: Build
@@ -20,10 +21,12 @@ jobs:
           git config --global user.name "$GITHUB_ACTOR"
           git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
 
-      - uses: actions/setup-node@v2
+      - name: ⎔ Setup node
+        uses: actions/setup-node@v3
         with:
-            node-version: '18.x'
-            registry-url: 'https://registry.npmjs.org'
+          node-version-file: '.nvmrc'
+          cache: 'yarn'
+          cache-dependency-path: '**/yarn.lock'
 
       - name: Restore/create node_modules cache
         uses: actions/cache@v3
@@ -32,7 +35,7 @@ jobs:
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install
         env:
           HUSKY: 0
 
