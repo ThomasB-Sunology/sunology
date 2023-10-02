@@ -4,7 +4,7 @@
   "sideEffects": false,
   "version": "0.1.0",
   "scripts": {
-    "build": "shopify hydrogen build",
+    "build": "shopify hydrogen build --no-lockfile-check --disable-route-warning",
     "dev": "shopify hydrogen dev --codegen-unstable",
     "preview": "npm run build && shopify hydrogen preview",
     "lint": "eslint --no-error-on-unmatched-pattern --ext .js,.ts,.jsx,.tsx .",
