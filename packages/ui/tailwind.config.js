@@ -1,3 +1,9 @@
+import plugin from 'tailwindcss/plugin';
+import forms from '@tailwindcss/forms';
+import typography from '@tailwindcss/typography';
+import aspectRatio from '@tailwindcss/aspect-ratio';
+import scrollBar from 'tailwind-scrollbar';
+
 const sizes = {};
 
 for (let i = 0; i < 500; i++) {
@@ -42,6 +48,9 @@ export default {
       "faded-green": "#939A92",
     },
     extend: {
+      aspectRatio: {
+        square: '1 / 1',
+      },
       spacing: {
         ...sizes
       },
@@ -56,6 +65,25 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    forms,
+    typography,
+    aspectRatio,
+    scrollBar,
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        // https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode
+        '.horizontal-writing-tb': { 'writing-mode': 'horizontal-tb' },
+        '.vertical-writing-rl': { 'writing-mode': 'vertical-rl' },
+        '.vertical-writing-lr': { 'writing-mode': 'vertical-lr' },
+        // https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation
+        '.orientation-mixed': { 'text-orientation': 'mixed' },
+        '.orientation-upright': { 'text-orientation': 'upright' },
+        '.orientation-sideways-right': { 'text-orientation': 'sideways-right' },
+        '.orientation-sideways': { 'text-orientation': 'sideways' },
+        '.orientation-glyph': { 'text-orientation': 'use-glyph-orientation' }
+      });
+    })
+  ],
 }
 
