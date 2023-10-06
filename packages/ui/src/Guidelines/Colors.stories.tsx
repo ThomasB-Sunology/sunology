@@ -9,9 +9,9 @@ const meta: Meta = {
         <div className="flex flex-row flex-wrap gap-4">
             {themeConfig.theme.colors && Object.entries(themeConfig.theme.colors).map(([k, v]) => {
                 if (typeof v === "string" && (v.match(/^#/) || v.match(/^rgb/) || k.match(/color/i))) {
-                    return <div className="flex flex-col gap-2 items-center">
+                    return <div className="flex flex-col gap-2">
                         <span className="text-xs">{k}</span>
-                        <div className="w-20 h-20 rounded-full" style={{backgroundColor: v}}></div>
+                        <div className="min-w-40 h-20 rounded-md" style={{backgroundColor: v}}></div>
                     </div>;
                 }
                 return null;

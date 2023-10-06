@@ -48,6 +48,9 @@ export default {
       width: {
         ...sizes
       },
+      minWidth: {
+        ...sizes
+      },
       height: {
         ...sizes
       },
