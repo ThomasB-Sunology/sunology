@@ -25,10 +25,5 @@
   },
   "engines": {
     "node": "^16 || ^18 || ^20"
-  },
-  "storybook-deployer": {
-    "gitUsername": "Sunology BOT",
-    "gitEmail": "designsystem@sunology.eu",
-    "commitMessage": "chore: deploy storybook"
   }
 }
