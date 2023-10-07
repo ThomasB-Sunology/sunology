@@ -39,4 +39,12 @@ jobs:
           HUSKY: 0
 
       - name: Build
-        run: yarn build
+        run: yarn build-storybook
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: packages/ui/docs
+          clean: true
+          clean-exclude: |
+            .nojekyll

@@ -7,7 +7,8 @@
   "scripts": {
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "dev": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build -o docs",
+    "postbuild-storybook": "touch ./docs/.nojekyll"
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",

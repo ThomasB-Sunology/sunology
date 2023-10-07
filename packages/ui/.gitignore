@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 .turbo
-storybook-static
+docs
