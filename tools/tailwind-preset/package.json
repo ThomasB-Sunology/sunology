@@ -1,0 +1,6 @@
+{
+  "name": "@sunology/tailwind-preset",
+  "version": "0.1.0",
+  "module": "index.ts",
+  "types": "types/index.d.ts"
+}

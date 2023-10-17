@@ -3,13 +3,7 @@ import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
 import aspectRatio from '@tailwindcss/aspect-ratio';
 import scrollBar from 'tailwind-scrollbar';
-
-const sizes = {};
-
-for (let i = 0; i < 500; i++) {
-  sizes[i] = `${i / 4}rem`;
-  sizes[`${i}.5`] = `${(i + 0.5) / 4}rem`;
-}
+import Suiktheme from '@sunology/tailwind-preset';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -20,51 +14,10 @@ export default {
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
-    colors: {
-      "black": "#0C0C0C",
-      "white": "#FFFFFF",
-
-      "hover-grey": "#2C2B2B",
-      "default-grey": "#666363",
-      "copy-grey": "#9C9C9C",
-      "light-grey": "#CFCFCF",
-      "faint-grey": "#EDEDED",
-      "faded-grey": "#F8F8F8",
-
-      "energy-yellow": "#EDFF00",
-
-      "electric-blue": "#0000FF",
-      "mid-blue": "#0000DA",
-      "deep-blue": "#0000DA",
-      
-      "background-black": "#1D1D1D",
-      "dark-grey": "#404040",
-
-      
-      "dark-green": "#23251F",
-      "medium-green": "#3B3F35",
-      "lighter-green": "#474B3F",
-      "faded-green": "#939A92",
-    },
-    extend: {
-      aspectRatio: {
-        square: '1 / 1',
-      },
-      spacing: {
-        ...sizes
-      },
-      width: {
-        ...sizes
-      },
-      minWidth: {
-        ...sizes
-      },
-      height: {
-        ...sizes
-      },
-    },
-  },
+  presets: [
+    Suiktheme
+  ],
+  theme: {},
   plugins: [
     forms,
     typography,
