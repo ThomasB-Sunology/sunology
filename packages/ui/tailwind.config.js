@@ -8,6 +8,7 @@ import Suiktheme from '@sunology/tailwind-preset';
 /** @type {import('tailwindcss').Config} */
 export default {
   mode: 'jit',
+  darkMode: 'class',
   corePlugins: {
     preflight: true
   },

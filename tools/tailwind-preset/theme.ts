@@ -18,10 +18,12 @@ export default {
     "faded-grey": "#F8F8F8",
 
     "energy-yellow": "#EDFF00",
+    "hover-yellow": "#C3D100",
+    "deep-yellow": "#7C8600",
 
     "electric-blue": "#0000FF",
     "mid-blue": "#0000DA",
-    "deep-blue": "#0000DA",
+    "deep-blue": "#0000B6",
     
     "background-black": "#1D1D1D",
     "dark-grey": "#404040",
