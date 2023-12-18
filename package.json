@@ -22,7 +22,7 @@
     "@storybook/storybook-deployer": "^2.8.16",
     "husky": "^8.0.3",
     "is-ci": "^3.0.1",
-    "turbo": "^1.10.14"
+    "turbo": "^1.11.2"
   },
   "engines": {
     "node": "^16 || ^18 || ^20"
