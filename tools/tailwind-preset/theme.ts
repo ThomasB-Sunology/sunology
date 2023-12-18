@@ -28,13 +28,58 @@ export default {
     "background-black": "#1D1D1D",
     "dark-grey": "#404040",
 
-    
     "dark-green": "#23251F",
     "medium-green": "#3B3F35",
     "lighter-green": "#474B3F",
     "faded-green": "#939A92",
   },
+  fontSize: {
+    "chip": ["0.75rem", {
+      lineHeight: '1.375rem',
+      fontWeight: '600',
+      letterSpacing: '.05em',
+    }],
+    "body-small": ["0.875rem", {
+      lineHeight: '1.25rem',
+      fontWeight: '400',
+    }],
+    "body-medium": ["1rem", {
+      lineHeight: '1.25rem',
+      fontWeight: '400',
+    }],
+    "body-large": ["1.125rem", {
+      lineHeight: '1.5rem',
+      fontWeight: '500',
+    }],
+    "tiny-title": ["2rem", {
+      lineHeight: '1',
+      fontWeight: '800',
+    }],
+    "small-title": ["2.5rem", {
+      lineHeight: '1',
+      fontWeight: '800',
+    }],
+    "medium-title": ["3.5rem", {
+      lineHeight: '1',
+      fontWeight: '800',
+    }],
+    "large-title": ["4.5rem", {
+      lineHeight: '1',
+      fontWeight: '800',
+    }],
+    "super-title": ["6rem", {
+      lineHeight: '1',
+      fontWeight: '800',
+    }],
+    "mega-title": ["7.875rem", {
+      lineHeight: '1',
+      fontWeight: '900',
+    }]
+  },
   extend: {
+    fontFamily: {
+      'inter': ['Inter', 'sans-serif']
+    },
     aspectRatio: {
       square: '1 / 1',
     },

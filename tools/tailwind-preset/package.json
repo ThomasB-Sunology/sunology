@@ -2,5 +2,9 @@
   "name": "@sunology/tailwind-preset",
   "version": "0.1.0",
   "module": "index.ts",
-  "types": "types/index.d.ts"
+  "types": "types/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf types",
+    "generateTypes": "npm run clean && npx -p typescript tsc index.ts --declaration --allowJs --emitDeclarationOnly --outDir types"
+  }
 }

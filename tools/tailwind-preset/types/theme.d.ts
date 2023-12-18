@@ -9,6 +9,8 @@ declare const _default: {
         "faint-grey": string;
         "faded-grey": string;
         "energy-yellow": string;
+        "hover-yellow": string;
+        "deep-yellow": string;
         "electric-blue": string;
         "mid-blue": string;
         "deep-blue": string;
@@ -19,7 +21,53 @@ declare const _default: {
         "lighter-green": string;
         "faded-green": string;
     };
+    fontSize: {
+        chip: (string | {
+            lineHeight: string;
+            fontWeight: string;
+            letterSpacing: string;
+        })[];
+        "body-small": (string | {
+            lineHeight: string;
+            fontWeight: string;
+        })[];
+        "body-medium": (string | {
+            lineHeight: string;
+            fontWeight: string;
+        })[];
+        "body-large": (string | {
+            lineHeight: string;
+            fontWeight: string;
+        })[];
+        "tiny-title": (string | {
+            lineHeight: string;
+            fontWeight: string;
+        })[];
+        "small-title": (string | {
+            lineHeight: string;
+            fontWeight: string;
+        })[];
+        "medium-title": (string | {
+            lineHeight: string;
+            fontWeight: string;
+        })[];
+        "large-title": (string | {
+            lineHeight: string;
+            fontWeight: string;
+        })[];
+        "super-title": (string | {
+            lineHeight: string;
+            fontWeight: string;
+        })[];
+        "mega-title": (string | {
+            lineHeight: string;
+            fontWeight: string;
+        })[];
+    };
     extend: {
+        fontFamily: {
+            inter: string[];
+        };
         aspectRatio: {
             square: string;
         };
