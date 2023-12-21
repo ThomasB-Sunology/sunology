@@ -24,6 +24,12 @@ export const Primary: Story = {
     args: {},
 }
 
+export const Secondary: Story = {
+    args: {
+        intent: "secondary"
+    },
+}
+
 export const Tertiary: Story = {
     render: (args) => <Button {...args}>
         Button
