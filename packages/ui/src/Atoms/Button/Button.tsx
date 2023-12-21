@@ -8,9 +8,7 @@ import { cn } from "@sunology/utils"
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
     VariantProps<typeof buttonVariants> & 
     {
-        asChild?: boolean,
-        size?: string,
-        intent?: string
+        asChild?: boolean
     }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(

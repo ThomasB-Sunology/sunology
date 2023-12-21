@@ -9,8 +9,7 @@ import { cn } from "@sunology/utils"
 export type TooltipProps = React.HTMLAttributes<HTMLElement> &
     VariantProps<typeof tooltipVariants> & 
     {
-        asChild?: boolean,
-        intent?: string
+      asChild?: boolean
     }
 
 const TooltipProvider = TooltipPrimitive.Provider
