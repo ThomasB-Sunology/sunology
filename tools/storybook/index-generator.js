@@ -2,7 +2,7 @@ const generateLinks = (package) => `
   <a href="${package.name}" target="_blank" rel="noopener noreferrer" class="btn" style="width: 300px">
     ${package.name}
   </a>
-`;
+`
 
 const generateHTML = (packages) => `
   <!DOCTYPE html>
@@ -71,8 +71,8 @@ const generateHTML = (packages) => `
     </div>
   </body>
   </html>
-`;
+`
 
 module.exports = function buildMonorepoIndex(packages) {
-	return generateHTML(packages);
-};
+	return generateHTML(packages)
+}

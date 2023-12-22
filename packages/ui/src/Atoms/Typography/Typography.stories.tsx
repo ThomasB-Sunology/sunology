@@ -1,6 +1,6 @@
-import { Meta, StoryObj } from '@storybook/react';
-import Suiktheme from '@sunology/tailwind-preset';
-import { Typography } from './Typography';
+import { Meta, StoryObj } from '@storybook/react'
+import Suiktheme from '@sunology/tailwind-preset'
+import { Typography } from './Typography'
 
 const meta: Meta = {
 	title: 'Guidelines/Typography',
@@ -15,15 +15,15 @@ const meta: Meta = {
 								<Typography intent={fs} key={fs}>
 									Lorem ipsum.
 								</Typography>
-							);
+							)
 						})}
 			</div>
-		);
+		)
 	},
-};
+}
 
-export default meta;
+export default meta
 
-type Story = StoryObj;
+type Story = StoryObj
 
-export const Overview: Story = {};
+export const Overview: Story = {}

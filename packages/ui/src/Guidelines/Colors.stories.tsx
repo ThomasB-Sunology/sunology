@@ -1,5 +1,5 @@
-import { Meta, StoryObj } from '@storybook/react';
-import Suiktheme from '@sunology/tailwind-preset';
+import { Meta, StoryObj } from '@storybook/react'
+import Suiktheme from '@sunology/tailwind-preset'
 
 const meta: Meta = {
 	title: 'Guidelines/Colors',
@@ -24,17 +24,17 @@ const meta: Meta = {
 										style={{ backgroundColor: v }}
 									></div>
 								</div>
-							);
+							)
 						}
-						return null;
+						return null
 					})}
 			</div>
-		);
+		)
 	},
-};
+}
 
-export default meta;
+export default meta
 
-type Story = StoryObj;
+type Story = StoryObj
 
-export const Overview: Story = {};
+export const Overview: Story = {}

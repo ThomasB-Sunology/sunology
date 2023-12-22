@@ -1,4 +1,4 @@
-import { cva } from 'class-variance-authority';
+import { cva } from 'class-variance-authority'
 
 export const buttonVariants = cva(
 	'inline-flex gap-2.5 items-center font-inter font-semibold rounded-full transition-all ease-in-out',
@@ -23,5 +23,5 @@ export const buttonVariants = cva(
 			intent: 'primary',
 			size: 'md',
 		},
-	},
-);
+	}
+)

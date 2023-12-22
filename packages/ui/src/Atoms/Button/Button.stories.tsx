@@ -1,6 +1,6 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react'
 
-import { Button } from './Button';
+import { Button } from './Button'
 
 const meta: Meta<typeof Button> = {
 	title: 'Atoms/Button',
@@ -11,24 +11,24 @@ const meta: Meta<typeof Button> = {
 		size: 'md',
 		asChild: false,
 	},
-};
-export default meta;
+}
+export default meta
 
-type Story = StoryObj<typeof Button>;
+type Story = StoryObj<typeof Button>
 
 export const Overview: Story = {
 	args: {},
-};
+}
 
 export const Primary: Story = {
 	args: {},
-};
+}
 
 export const Secondary: Story = {
 	args: {
 		intent: 'secondary',
 	},
-};
+}
 
 export const Tertiary: Story = {
 	render: (args) => (
@@ -54,10 +54,10 @@ export const Tertiary: Story = {
 	args: {
 		intent: 'tertiary',
 	},
-};
+}
 
 export const Outline: Story = {
 	args: {
 		intent: 'outline',
 	},
-};
+}

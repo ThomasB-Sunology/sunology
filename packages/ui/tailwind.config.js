@@ -1,4 +1,4 @@
-import Suiktheme from '@sunology/tailwind-preset';
+import Suiktheme from '@sunology/tailwind-preset'
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -10,4 +10,4 @@ export default {
 	content: ['./src/**/*.{js,ts,jsx,tsx}'],
 	presets: [Suiktheme],
 	theme: {},
-};
+}

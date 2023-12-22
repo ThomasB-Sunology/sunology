@@ -1,8 +1,8 @@
-import plugin = require('tailwindcss/plugin');
-import forms = require('@tailwindcss/forms');
-import typography = require('@tailwindcss/typography');
-import aspectRatio = require('@tailwindcss/aspect-ratio');
-import scrollBar = require('tailwind-scrollbar');
+import plugin = require('tailwindcss/plugin')
+import forms = require('@tailwindcss/forms')
+import typography = require('@tailwindcss/typography')
+import aspectRatio = require('@tailwindcss/aspect-ratio')
+import scrollBar = require('tailwind-scrollbar')
 
 export default [
 	forms,
@@ -25,7 +25,7 @@ export default [
 			'.orientation-glyph': {
 				'text-orientation': 'use-glyph-orientation',
 			},
-		});
+		})
 	}),
 	plugin(function ({ matchUtilities, theme }) {
 		matchUtilities(
@@ -34,7 +34,7 @@ export default [
 					textShadow: value,
 				}),
 			},
-			{ values: theme('textShadow') },
-		);
+			{ values: theme('textShadow') }
+		)
 	}),
-];
+]

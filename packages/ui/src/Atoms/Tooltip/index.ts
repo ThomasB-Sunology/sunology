@@ -1,2 +1,2 @@
-export { tooltipVariants } from './props';
-export { Tooltip } from './Tooltip';
+export { tooltipVariants } from './props'
+export { Tooltip } from './Tooltip'

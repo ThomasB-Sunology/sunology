@@ -1,11 +1,11 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react'
 
 import {
 	Tooltip,
 	TooltipContent,
 	TooltipProvider,
 	TooltipTrigger,
-} from './Tooltip';
+} from './Tooltip'
 
 const meta: Meta<typeof TooltipTrigger> = {
 	title: 'Atoms/Tooltip',
@@ -63,17 +63,17 @@ const meta: Meta<typeof TooltipTrigger> = {
 			</Tooltip>
 		</TooltipProvider>
 	),
-};
-export default meta;
+}
+export default meta
 
-type Story = StoryObj<typeof TooltipTrigger>;
+type Story = StoryObj<typeof TooltipTrigger>
 
 export const Overview: Story = {
 	args: {
 		intent: 'dark',
 		asChild: false,
 	},
-};
+}
 
 export const AsChild: Story = {
 	render: ({ intent, asChild }) => (
@@ -119,4 +119,4 @@ export const AsChild: Story = {
 	args: {
 		asChild: true,
 	},
-};
+}

@@ -1,4 +1,4 @@
-import { cva } from 'class-variance-authority';
+import { cva } from 'class-variance-authority'
 
 export const tooltipVariants = cva(
 	'inline-flex gap-2 items-center text-body-medium',
@@ -29,5 +29,5 @@ export const tooltipVariants = cva(
 			intent: 'dark',
 			asChild: false,
 		},
-	},
-);
+	}
+)

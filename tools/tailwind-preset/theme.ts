@@ -1,8 +1,8 @@
-const sizes = {};
+const sizes = {}
 
 for (let i = 0; i < 500; i++) {
-	sizes[i] = `${i / 4}rem`;
-	sizes[`${i}.5`] = `${(i + 0.5) / 4}rem`;
+	sizes[i] = `${i / 4}rem`
+	sizes[`${i}.5`] = `${(i + 0.5) / 4}rem`
 }
 
 export default {
@@ -130,4 +130,4 @@ export default {
 			logo: '0 4px 20px rgba(237, 255, 0, 0.65)',
 		},
 	},
-};
+}
