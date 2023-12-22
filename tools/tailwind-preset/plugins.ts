@@ -1,8 +1,8 @@
-import plugin = require('tailwindcss/plugin')
-import forms = require('@tailwindcss/forms')
-import typography = require('@tailwindcss/typography')
-import aspectRatio = require('@tailwindcss/aspect-ratio')
-import scrollBar = require('tailwind-scrollbar')
+import * as plugin from 'tailwindcss/plugin'
+import * as forms from '@tailwindcss/forms'
+import * as typography from '@tailwindcss/typography'
+import * as aspectRatio from '@tailwindcss/aspect-ratio'
+import * as scrollBar from 'tailwind-scrollbar'
 
 export default [
 	forms,
