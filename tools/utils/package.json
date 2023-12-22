@@ -1,11 +1,11 @@
 {
-  "name": "@sunology/utils",
-  "version": "0.1.0",
-  "module": "index.ts",
-  "main": "index.ts",
-  "license": "MIT",
-  "dependencies": {
-    "clsx": "^2.0.0",
-    "tailwind-merge": "^1.14.0"
-  }
+	"name": "@sunology/utils",
+	"version": "0.1.0",
+	"module": "index.ts",
+	"main": "index.ts",
+	"license": "MIT",
+	"dependencies": {
+		"clsx": "^2.0.0",
+		"tailwind-merge": "^1.14.0"
+	}
 }

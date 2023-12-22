@@ -40,7 +40,7 @@ export const shouldRevalidate: ShouldRevalidateFunction = ({
 
 export function links() {
   return [
-    { rel: 'stylesheet', href: tailwindCss },
+    {rel: 'stylesheet', href: tailwindCss},
     {
       rel: 'preconnect',
       href: 'https://cdn.shopify.com',

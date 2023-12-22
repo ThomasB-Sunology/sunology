@@ -67,6 +67,7 @@ declare const _default: {
     extend: {
         fontFamily: {
             inter: string[];
+            britanica: string[];
         };
         aspectRatio: {
             square: string;
@@ -75,6 +76,9 @@ declare const _default: {
         width: {};
         minWidth: {};
         height: {};
+        textShadow: {
+            logo: string;
+        };
     };
 };
 export default _default;

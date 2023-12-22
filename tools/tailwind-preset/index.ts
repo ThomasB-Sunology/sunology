@@ -1,5 +1,7 @@
 import Suiktheme from './theme';
+import plugins from './plugins';
 
 export default {
-    theme: Suiktheme,
-}
+	theme: Suiktheme,
+	plugins,
+};

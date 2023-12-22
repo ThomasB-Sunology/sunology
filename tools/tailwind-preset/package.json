@@ -1,10 +1,18 @@
 {
-  "name": "@sunology/tailwind-preset",
-  "version": "0.1.0",
-  "module": "index.ts",
-  "types": "types/index.d.ts",
-  "scripts": {
-    "clean": "rm -rf types",
-    "generateTypes": "npm run clean && npx -p typescript tsc index.ts --declaration --allowJs --emitDeclarationOnly --outDir types"
-  }
+	"name": "@sunology/tailwind-preset",
+	"version": "0.1.0",
+	"type": "module",
+	"module": "index.ts",
+	"types": "types/index.d.ts",
+	"scripts": {
+		"clean": "rm -rf types",
+		"generateTypes": "npm run clean && npx -p typescript tsc index.ts --declaration --allowJs --emitDeclarationOnly --outDir types"
+	},
+	"dependencies": {
+		"@tailwindcss/aspect-ratio": "^0.4.2",
+		"@tailwindcss/forms": "^0.5.6",
+		"@tailwindcss/typography": "^0.5.10",
+		"tailwindcss": "^3.3.3",
+		"tailwind-scrollbar": "^3.0.5"
+	}
 }

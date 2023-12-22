@@ -74,5 +74,5 @@ const generateHTML = (packages) => `
 `;
 
 module.exports = function buildMonorepoIndex(packages) {
-  return generateHTML(packages);
+	return generateHTML(packages);
 };

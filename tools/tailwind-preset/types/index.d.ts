@@ -68,6 +68,7 @@ declare const _default: {
         extend: {
             fontFamily: {
                 inter: string[];
+                britanica: string[];
             };
             aspectRatio: {
                 square: string;
@@ -76,7 +77,22 @@ declare const _default: {
             width: {};
             minWidth: {};
             height: {};
+            textShadow: {
+                logo: string;
+            };
         };
     };
+    plugins: ({
+        handler: import("tailwindcss/types/config").PluginCreator;
+        config?: Partial<import("tailwindcss/types/config").Config>;
+    } | typeof import("@tailwindcss/forms") | typeof import("@tailwindcss/typography") | {
+        handler: () => void;
+    } | {
+        (options: any): {
+            handler: import("tailwindcss/types/config").PluginCreator;
+            config?: Partial<import("tailwindcss/types/config").Config>;
+        };
+        __isOptionsFunction: true;
+    })[];
 };
 export default _default;

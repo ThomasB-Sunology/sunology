@@ -1,0 +1,9 @@
+**/build
+**/dist
+**/docs
+**/coverage
+**/lib
+**/CHANGELOG.md
+**/.*
+**/*.d.ts
+**/*.hbs
