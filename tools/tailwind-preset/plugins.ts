@@ -1,14 +1,10 @@
-import * as plugin from 'tailwindcss/plugin'
-import * as forms from '@tailwindcss/forms'
-import * as typography from '@tailwindcss/typography'
-import * as aspectRatio from '@tailwindcss/aspect-ratio'
-import * as scrollBar from 'tailwind-scrollbar'
+const plugin = require('tailwindcss/plugin')
 
 export default [
-	forms,
-	typography,
-	aspectRatio,
-	scrollBar,
+	require('@tailwindcss/forms'),
+	require('@tailwindcss/typography'),
+	require('@tailwindcss/aspect-ratio'),
+	require('tailwind-scrollbar'),
 	plugin(function ({ addUtilities }) {
 		addUtilities({
 			// https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode

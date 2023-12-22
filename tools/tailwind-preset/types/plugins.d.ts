@@ -1,5 +1,5 @@
-import forms = require('@tailwindcss/forms');
-import typography = require('@tailwindcss/typography');
+import * as forms from '@tailwindcss/forms';
+import * as typography from '@tailwindcss/typography';
 declare const _default: ({
     handler: import("tailwindcss/types/config").PluginCreator;
     config?: Partial<import("tailwindcss/types/config").Config>;
