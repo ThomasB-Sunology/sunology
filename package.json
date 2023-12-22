@@ -29,9 +29,9 @@
 		"turbo": "^1.11.2"
 	},
 	"lint-staged": {
-	  "./packages/**/*.{json,js,jsx,ts,tsx}": [
-		"yarn prettier:fix"
-	  ]
+		"./packages/**/*.{json,js,jsx,ts,tsx}": [
+			"yarn prettier:fix"
+		]
 	},
 	"engines": {
 		"node": "^16 || ^18 || ^20"
