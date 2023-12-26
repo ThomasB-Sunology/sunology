@@ -1,5 +1,5 @@
-declare const _default: {
-    colors: {
+declare namespace _default {
+    let colors: {
         black: string;
         white: string;
         'hover-grey': string;
@@ -21,7 +21,7 @@ declare const _default: {
         'lighter-green': string;
         'faded-green': string;
     };
-    fontSize: {
+    let fontSize: {
         chip: (string | {
             lineHeight: string;
             fontWeight: string;
@@ -64,21 +64,21 @@ declare const _default: {
             fontWeight: string;
         })[];
     };
-    extend: {
-        fontFamily: {
-            inter: string[];
-            britanica: string[];
-        };
-        aspectRatio: {
-            square: string;
-        };
-        spacing: {};
-        width: {};
-        minWidth: {};
-        height: {};
-        textShadow: {
-            logo: string;
-        };
-    };
-};
+    namespace extend {
+        namespace fontFamily {
+            let inter: string[];
+            let britanica: string[];
+        }
+        namespace aspectRatio {
+            let square: string;
+        }
+        let spacing: {};
+        let width: {};
+        let minWidth: {};
+        let height: {};
+        namespace textShadow {
+            let logo: string;
+        }
+    }
+}
 export default _default;

@@ -1,15 +1,15 @@
-import * as customPlugin from 'tailwindcss/plugin'
-import * as forms from "@tailwindcss/forms"
-import * as typography from "@tailwindcss/typography"
-import * as aspectRatio from "@tailwindcss/aspect-ratio"
-import * as scrollBar from "tailwind-scrollbar"
+const plugin = require('tailwindcss/plugin')
+const forms = require("@tailwindcss/forms")
+const typography = require("@tailwindcss/typography")
+const aspectRatio = require("@tailwindcss/aspect-ratio")
+const scrollBar = require("tailwind-scrollbar")
 
 export default [
 	forms,
 	typography,
 	aspectRatio,
 	scrollBar,
-	customPlugin(function ({ addUtilities }) {
+	plugin(function ({ addUtilities }) {
 		addUtilities({
 			// https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode
 			'.horizontal-writing-tb': { 'writing-mode': 'horizontal-tb' },
@@ -27,7 +27,7 @@ export default [
 			},
 		})
 	}),
-	customPlugin(function ({ matchUtilities, theme }) {
+	plugin(function ({ matchUtilities, theme }) {
 		matchUtilities(
 			{
 				'text-shadow': (value) => ({

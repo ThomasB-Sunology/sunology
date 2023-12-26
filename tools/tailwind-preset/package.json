@@ -1,7 +1,7 @@
 {
 	"name": "@sunology/tailwind-preset",
 	"version": "0.1.0",
-	"main": "index.ts",
+	"main": "index.js",
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"prebuild": "tsc"
