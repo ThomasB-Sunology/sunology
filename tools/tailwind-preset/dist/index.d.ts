@@ -82,17 +82,6 @@ declare const _default: {
             };
         };
     };
-    plugins: ({
-        handler: import("tailwindcss/types/config").PluginCreator;
-        config?: Partial<import("tailwindcss/types/config").Config>;
-    } | typeof import("@tailwindcss/forms") | typeof import("@tailwindcss/typography") | {
-        handler: () => void;
-    } | {
-        (options: any): {
-            handler: import("tailwindcss/types/config").PluginCreator;
-            config?: Partial<import("tailwindcss/types/config").Config>;
-        };
-        __isOptionsFunction: true;
-    })[];
+    plugins: any[];
 };
 export default _default;
