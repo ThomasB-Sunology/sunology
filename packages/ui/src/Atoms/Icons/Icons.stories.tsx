@@ -5,11 +5,11 @@ const meta: Meta = {
 	title: 'Atoms/Icons',
 	render: () => {
 		return (
-			<div className="text-black flex flex-row flex-wrap gap-4">
-				<Profile className="group w-10 h-10" />
-				<ChevronUp className="group w-10 h-10" />
-				<ChevronDown className="group w-10 h-10" />
-				<Info className="group w-10 h-10" />
+			<div className="flex flex-row flex-wrap gap-4 text-black">
+				<Profile className="group h-10 w-10" />
+				<ChevronUp className="group h-10 w-10" />
+				<ChevronDown className="group h-10 w-10" />
+				<Info className="group h-10 w-10" />
 			</div>
 		)
 	},

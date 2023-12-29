@@ -1,8 +1,8 @@
 import plugin from 'tailwindcss/plugin'
-import forms from "@tailwindcss/forms"
-import typography from "@tailwindcss/typography"
-import aspectRatio from "@tailwindcss/aspect-ratio"
-import scrollBar from "tailwind-scrollbar"
+import forms from '@tailwindcss/forms'
+import typography from '@tailwindcss/typography'
+import aspectRatio from '@tailwindcss/aspect-ratio'
+import scrollBar from 'tailwind-scrollbar'
 
 export default [
 	forms,
@@ -36,5 +36,5 @@ export default [
 			},
 			{ values: theme('textShadow') }
 		)
-	})
+	}),
 ]
