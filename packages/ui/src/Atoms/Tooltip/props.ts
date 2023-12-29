@@ -1,7 +1,7 @@
 import { cva } from 'class-variance-authority'
 
 export const tooltipVariants = cva(
-	'inline-flex gap-2 items-center text-body-medium',
+	'inline-flex items-center gap-2 text-body-medium',
 	{
 		variants: {
 			intent: {
@@ -18,7 +18,7 @@ export const tooltipVariants = cva(
 			{
 				intent: ['dark', 'neon', 'white'],
 				asChild: false,
-				className: 'p-2 rounded-full font-inter',
+				className: 'rounded-full p-2 font-inter',
 			},
 			{
 				asChild: true,

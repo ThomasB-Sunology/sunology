@@ -20,7 +20,7 @@ const meta: Meta = {
 										{k}
 									</span>
 									<div
-										className="min-w-40 h-20 rounded-md"
+										className="h-20 min-w-40 rounded-md"
 										style={{ backgroundColor: v }}
 									></div>
 								</div>

@@ -5,7 +5,7 @@ const meta: Meta = {
 	title: 'Atoms/Logos',
 	render: () => {
 		return (
-			<div className="bg-background-black flex flex-col flex-wrap gap-4 p-4">
+			<div className="flex flex-col flex-wrap gap-4 bg-background-black p-4">
 				<Play />
 				<City />
 				<PlayMax />
