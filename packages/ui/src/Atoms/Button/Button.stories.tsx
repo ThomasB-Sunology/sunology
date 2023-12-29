@@ -7,9 +7,6 @@ const meta: Meta<typeof Button> = {
 	component: Button,
 	args: {
 		children: 'Button',
-		intent: 'primary',
-		size: 'md',
-		asChild: false,
 	},
 }
 export default meta

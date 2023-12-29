@@ -69,10 +69,7 @@ export default meta
 type Story = StoryObj<typeof TooltipTrigger>
 
 export const Overview: Story = {
-	args: {
-		intent: 'dark',
-		asChild: false,
-	},
+	args: {},
 }
 
 export const AsChild: Story = {
