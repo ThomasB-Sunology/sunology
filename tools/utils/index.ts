@@ -1,3 +1,4 @@
+import { lazy as _lazy } from 'react'
 import { clsx, type ClassValue } from 'clsx'
 import { twMerge } from 'tailwind-merge'
 

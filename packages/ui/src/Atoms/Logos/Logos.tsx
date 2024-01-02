@@ -1,64 +1,22 @@
-import * as React from 'react'
-import { cn } from '@sunology/utils'
+import { HTMLAttributes, useMemo } from 'react'
+import { Suspense } from 'react'
 
-export type LogosProps = React.HTMLAttributes<HTMLSpanElement>
+import { logos } from './components'
 
-const Play = ({ className, ...props }: LogosProps) => {
-	return (
-		<span
-			className={cn(
-				'font-britanica font-extrabold tracking-wide text-white',
-				className
-			)}
-			{...props}
-		>
-			PLAY
-		</span>
-	)
+export type LogoName = keyof typeof logos
+
+type LogosProps = HTMLAttributes<HTMLSpanElement> & {
+	logo: LogoName
 }
 
-const City = ({ className, ...props }: LogosProps) => {
+export const Logos = ({ logo = 'Play', ...props }: LogosProps) => {
+	const Logo = useMemo(() => logos[logo], [logo])
+
+	if (!Logo) return null
+
 	return (
-		<span
-			className={cn(
-				'font-britanica font-extrabold tracking-wide text-white',
-				className
-			)}
-			{...props}
-		>
-			CITY
-		</span>
+		<Suspense fallback={null}>
+			<Logo {...props} />
+		</Suspense>
 	)
 }
-
-const PlayMax = ({ className, ...props }: LogosProps) => {
-	return (
-		<span
-			className={cn(
-				'font-britanica font-extrabold tracking-wide text-white',
-				className
-			)}
-			{...props}
-		>
-			PLAY&nbsp;
-			<span className="text-energy-yellow text-shadow-logo">Max</span>
-		</span>
-	)
-}
-
-const PlayGo = ({ className, ...props }: LogosProps) => {
-	return (
-		<span
-			className={cn(
-				'font-britanica font-extrabold tracking-wide text-white',
-				className
-			)}
-			{...props}
-		>
-			PLAY&nbsp;
-			<span className="text-energy-yellow text-shadow-logo">Go</span>
-		</span>
-	)
-}
-
-export { Play, City, PlayMax, PlayGo }

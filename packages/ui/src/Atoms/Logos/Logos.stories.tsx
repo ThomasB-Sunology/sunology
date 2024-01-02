@@ -1,22 +1,23 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { City, Play, PlayGo, PlayMax } from './Logos'
+import { Logos } from './Logos'
 
-const meta: Meta = {
+const meta: Meta<typeof Logos> = {
 	title: 'Atoms/Logos',
-	render: () => {
+	component: Logos,
+	render: ({ logo, ...props }) => {
 		return (
-			<div className="flex flex-col flex-wrap gap-4 bg-background-black p-4">
-				<Play />
-				<City />
-				<PlayMax />
-				<PlayGo />
+			<div className="bg-background-black p-4">
+				<Logos logo={logo} {...props} />
 			</div>
 		)
+	},
+	args: {
+		logo: 'Play',
 	},
 }
 
 export default meta
 
-type Story = StoryObj
+type Story = StoryObj<typeof Logos>
 
 export const Overview: Story = {}
